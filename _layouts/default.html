@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Club des désagréables</title>
+    <style>
+    body {
+      font-family: monospace;
+      font-size: 3rem;
+      background-image: url("/img/le-danseur-en-furie.gif");
+    }
+    .center {
+      text-align: center;
+    }
+    .magie {
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      cursor: pointer;
+      border: none;
+      font: normal normal bold 70px/normal "Bad Script", Helvetica, sans-serif;
+      color: rgba(0, 0, 0, 0);
+      text-align: center;
+      -o-text-overflow: clip;
+      text-overflow: clip;
+      text-shadow: 3px 0 0 rgb(217,31,38) , 6px 0 0 rgb(226,91,14) , 9px 0 0 rgb(245,221,8) , 12px 0 0 rgb(5,148,68) , 15px 0 0 rgb(2,135,206) , 18px 0 0 rgb(4,77,145) , 21px 0 0 rgb(42,21,113) ;
+      -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .rainbow {
+      text-shadow: -3px 0 0 rgb(217,31,38) , -6px 0 0 rgb(226,91,14) , -9px 0 0 rgb(245,221,8) , -12px 0 0 rgb(5,148,68) , -15px 0 0 rgb(2,135,206) , -18px 0 0 rgb(4,77,145) , -21px 0 0 rgb(42,21,113) ;
+      -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      -o-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .rainbow {
+      -webkit-animation:rainbow 1s infinite;
+      -ms-animation:rainbow 1s infinite;
+      -o-animation:rainbow 1s infinite;
+      animation:rainbow 1s infinite;
+    }
+    @-webkit-keyframes rainbow {
+      0% {color: #ff0000;}
+      10% {color: #ff8000;}
+      20% {color: #ffff00;}
+      30% {color: #80ff00;}
+      40% {color: #00ff00;}
+      50% {color: #00ff80;}
+      60% {color: #00ffff;}
+      70% {color: #0080ff;}
+      80% {color: #0000ff;}
+      90% {color: #8000ff;}
+      100% {color: #ff0080;}
+    }
+    @-ms-keyframes rainbow {
+      0% {color: #ff0000;}
+      10% {color: #ff8000;}
+      20% {color: #ffff00;}
+      30% {color: #80ff00;}
+      40% {color: #00ff00;}
+      50% {color: #00ff80;}
+      60% {color: #00ffff;}
+      70% {color: #0080ff;}
+      80% {color: #0000ff;}
+      90% {color: #8000ff;}
+      100% {color: #ff0080;}
+    }
+    @-o-keyframes rainbow {
+      0% {color: #ff0000;}
+      10% {color: #ff8000;}
+      20% {color: #ffff00;}
+      30% {color: #80ff00;}
+      40% {color: #00ff00;}
+      50% {color: #00ff80;}
+      60% {color: #00ffff;}
+      70% {color: #0080ff;}
+      80% {color: #0000ff;}
+      90% {color: #8000ff;}
+      100% {color: #ff0080;}
+    }
+    @keyframes rainbow {
+      0% {color: #ff0000;}
+      10% {color: #ff8000;}
+      20% {color: #ffff00;}
+      30% {color: #80ff00;}
+      40% {color: #00ff00;}
+      50% {color: #00ff80;}
+      60% {color: #00ffff;}
+      70% {color: #0080ff;}
+      80% {color: #0000ff;}
+      90% {color: #8000ff;}
+      100% {color: #ff0080;}
+    }
+
+    blink {
+      -webkit-animation: blink 1s step-end infinite;
+      animation: blink 1s step-end infinite
+    }
+
+    @-webkit-keyframes blink {
+      67% { opacity: 0 }
+    }
+
+    @keyframes blink {
+      67% { opacity: 0 }
+    }
+    .github:visited {color: #E6FF00; }
+    .github:hover {color: #00CCFF; }
+    .github:link {color: #E6FF00; }
+    .github {color: #E6FF00; }
+
+    #unicorn {
+      display: none;
+      position: fixed;
+      width: 250px;
+      height: 250px;
+      cursor: pointer;
+    }
+    #unicorn.unicorn-1 { background-image:url('img/unicorn1.jpg'); }
+    #unicorn.unicorn-2 { background-image:url('img/unicorn2.jpg'); }
+    #unicorn.unicorn-3 { background-image:url('img/unicorn3.jpg'); }
+    #unicorn.unicorn-4 { background-image:url('img/unicorn4.jpg'); }
+    #unicorn.unicorn-5 { background-image:url('img/unicorn5.jpg'); }
+
+    #cake {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-image: url('img/cake.gif');
+      transform: scale(2);
+    }
+    </style>
+  </head>
+  <body>
+    <div class="center rainbow">
+      <h1>Club des désagréables</h1>
+      <center>
+        <img src ="/img/feu-qui-parle.gif">
+        <br />
+        <img src="http://media.giphy.com/media/tfLSIYQLDmIH6/giphy.gif">
+        <img src="http://media.giphy.com/media/tfLSIYQLDmIH6/giphy.gif">
+        <img src="http://media.giphy.com/media/tfLSIYQLDmIH6/giphy.gif">
+        <img src="http://media.giphy.com/media/tfLSIYQLDmIH6/giphy.gif">
+        <img src="http://media.giphy.com/media/tfLSIYQLDmIH6/giphy.gif">
+      </center>
+      <a href="/%%30%30">
+        <p class="magie">
+      VOUS ÊTES À LA BONNE PLACE SI VOUS AIMEZ RÉPONDRE « TOÉ T'ES X » OÙ X REPRÉSENTE TOUTE.
+      </p>
+      </a>
+      <p>
+      CONTACTEZ NOUS POUR JOINDRE LE CLUB À <a href="mailto:vp@desagreable.club">VP@DESAGREABLE.CLUB</a>
+      </p>
+
+      <h2>Équipe</h2>
+      <h3>Président</h3> <!-- lwi té cho -->
+      <p>
+        <img src="/img/king-desagreable.jpg" alt="">
+      </p>
+
+      <h3>Vice-Président</h3>
+      <p>
+        <img src="/img/vice-pres.jpg" alt="">
+      </p>
+
+      <p>
+      AU PLAISIR DE VOUS FAIRE CHIER.
+      </p>
+    </div>
+    <blink>
+      <center>
+        <a class="github" href="https://github.com/Desagreable/desagreable.github.io"> ON ACCEPTE LER POULES REQUÊTES SU GITHUB GITHUB !!!!!</a>
+      </center>
+    </blink>
+
+    <div id="unicorn"></div>
+
+    <div style="visibility: hidden; height: 0;">
+    <script type="text/javascript">
+      var chansons = ["%3Ciframe%20style%3D%22visibility%3A%20hidden%22%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22https%3A//www.youtube.com/embed/jg9E7V2Kdds%3Frel%3D0%26amp%3Bcontrols%3D0%26amp%3Bshowinfo%3D0%26amp%3Bautoplay%3D1%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C/iframe%3E", "%3Ciframe%20width%3D%22100%25%22%20height%3D%22450%22%20scrolling%3D%22no%22%20frameborder%3D%22no%22%20src%3D%22https%3A//w.soundcloud.com/player/%3Furl%3Dhttps%253A//api.soundcloud.com/tracks/196268273%26amp%3Bauto_play%3Dtrue%26amp%3Bhide_related%3Dfalse%26amp%3Bshow_comments%3Dtrue%26amp%3Bshow_user%3Dtrue%26amp%3Bshow_reposts%3Dfalse%26amp%3Bvisual%3Dtrue%22%3E%3C/iframe%3E", "%3Ciframe%20width%3D%22420%22%20height%3D%22315%22%20src%3D%22https%3A//www.youtube.com/embed/Sp2M1g_cU5w%3Frel%3D0%26amp%3Bcontrols%3D0%26amp%3Bshowinfo%3D0%26amp%3Bautoplay%3D1%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C/iframe%3E", "%3Ciframe%20width%3D%22420%22%20height%3D%22315%22%20src%3D%22https%3A//www.youtube.com/embed/RXb7cJUPCtk%3Frel%3D0%26amp%3Bcontrols%3D0%26amp%3Bshowinfo%3D0%26amp%3Bautoplay%3D1%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C/iframe%3E"];
+
+      document.write(unescape(chansons[Math.floor(Math.random() * chansons.length)]))
+    </script>
+    <script id="magic-cursor-criss">
+      function rand(min, max){
+        return Math.floor((Math.random() * max) + min);
+      }
+
+      var NB_UNICORNS = 5;
+      function Unicorn(id, speeds) {
+        this.elem = document.getElementById(id);
+        this.elem.onclick = function(){ alert('NIQAB!!!'); }
+        this.speeds = speeds;
+        this.rotation = 0;
+        this.interval = 0;
+      }
+      Unicorn.prototype.hi = function() {
+        this.elem.className = "unicorn-" + rand(1, NB_UNICORNS);
+        this.elem.style.display = 'block';
+        this.elem.style.left = rand(0, window.innerWidth - parseInt(this.elem.clientWidth)) + "px";
+        this.elem.style.top  = rand(0, window.innerHeight - parseInt(this.elem.clientHeight)) + "px";
+        this.rotation = 0;
+        this.rspeed = rand(this.speeds.min.rotation, this.speeds.max.rotation);
+        this.interval = setInterval(this.tick.bind(this), 25)
+      }
+      Unicorn.prototype.bye = function() {
+        this.elem.style.display = 'none';
+        clearInterval(this.interval)
+        this.interval = 0;
+      }
+      Unicorn.prototype.tick = function() {
+        this.rotation += this.rspeed;
+        this.elem.style.transform = "rotate(" + this.rotation + "deg)"
+      }
+
+      var MIN_TIME_INTERVAL = 0;
+      var MAX_TIME_INTERVAL = 10000;
+      var unicorn = new Unicorn('unicorn', {'min': {'rotation': 5}, 'max': {'rotation': 15}})
+      function magicUnicorn() {
+        var timeInterval = rand(MIN_TIME_INTERVAL, MAX_TIME_INTERVAL)
+        setTimeout(function(){
+          var magic = document.getElementById('s01');
+          unicorn.hi();
+          magic.onended = function(){
+            unicorn.bye();
+            magicUnicorn(); // And again...
+          }
+          magic.play();
+        }, timeInterval)
+      }
+      magicUnicorn(); // Yay!
+    </script>
+    <audio id="s01">
+      <source src="./sounds/s01.mp3" type="audio/mpeg" />
+    </audio>
+    </div>
+
+
+    <div id="cake"></div>
+    <script type="text/javascript">
+      (function() {
+        var cake = document.getElementById('cake');
+        var x = 0, y = 0, d = 15.0;
+
+        document.body.addEventListener('mousemove', function(e) {
+          x += (e.pageX - x) / d;
+          y += (e.pageY - y) / d;
+        });
+
+        setInterval(function() {
+          cake.style.left = x + "px";
+          cake.style.top = y + "px";
+        }, 1000 / 30)
+      })();
+
+    </script>
+  </body>
+</html>
